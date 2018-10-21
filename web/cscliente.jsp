@@ -75,8 +75,7 @@
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="cncliente.jsp">Crear Nuevo Cliente</a>
-                <a class="dropdown-item" href="accliente.jsp">Actualizar Cliente </a>
-                <a class="dropdown-item" href="cscliente.jsp">Consultar Clientes</a>
+                <a class="dropdown-item" href="cscliente.jsp">Consultar y Actualizar Clientes</a>
               </div>
             </li>
             <li class="nav-item dropdown">
@@ -107,3 +106,5 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </html>
 
+
+   
