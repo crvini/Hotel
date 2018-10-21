@@ -6,6 +6,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="main.css">
         <title>Creando Cliente</title>
     </head>
     <!-- Inicio del navbar -->
@@ -95,6 +96,40 @@
         </nav>
     <body>
     <!-- Inicio del index -->
+    <!-- Formulario para registro de nuevo cliente -->
+        <form>
+          <h2 class="text-primary"> Nuevo Cliente</h2>  
+          <div class="form-group">
+            <label for="CampoNit">Nit del Cliente</label>
+            <input type="text" class="form-control" id="nitCliente" placeholder="3138470-6" required>
+          </div>
+          <div class="form-group">
+            <label for="CampoNombre">Nombre del Cliente</label>
+            <input type="text" class="form-control" id="nombreCliente" placeholder="Cristian Hernandez" >
+          </div>
+          <div class="form-group">
+            <label for="CampoDireccion">Dirección del Cliente</label>
+            <input type="text" class="form-control" id="direccionCliente" placeholder="6ta calle a 5301 Guatemala" required>
+          </div>
+          <div class="form-group">
+            <label for="CampoTelefono">Telefono del Cliente</label>
+            <input type="text" class="form-control" id="telefonoCliente" placeholder="47368341" required>
+          </div>
+          <div class="form-group">
+              <!-- Boton para enviar los datos a la base de datos -->
+              <a onclick="return confirm('Esta seguro de registrar el nuevo cliente?')"><button type="submit" name="sned" class="btn btn-info">Registrar Cliente </button> </a>
+          </div>
+        </form>
+    
+    <!-- Final del index -->
+    </body>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</html>
+
+
     
     
     
