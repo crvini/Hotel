@@ -76,7 +76,6 @@
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="cncliente.jsp">Crear Nuevo Cliente</a>
-                <a class="dropdown-item" href="accliente.jsp">Actualizar Cliente </a>
                 <a class="dropdown-item" href="cscliente.jsp">Consultar Clientes</a>
               </div>
             </li>
