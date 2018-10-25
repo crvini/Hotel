@@ -6,6 +6,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="main.css">
         <title>Creando Cliente</title>
     </head>
     <!-- Inicio del navbar -->
@@ -75,7 +76,6 @@
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="cncliente.jsp">Crear Nuevo Cliente</a>
-                <a class="dropdown-item" href="accliente.jsp">Actualizar Cliente </a>
                 <a class="dropdown-item" href="cscliente.jsp">Consultar Clientes</a>
               </div>
             </li>
@@ -95,9 +95,30 @@
         </nav>
     <body>
     <!-- Inicio del index -->
-    
-    
-    
+    <!-- Formulario para registro de nuevo cliente -->
+        <form method="POST" action="ClienteServlet">
+          <h2 class="text-primary"> Nuevo Cliente</h2>  
+          <div class="form-group">
+            <label for="CampoNit">Nit del Cliente</label>
+            <input type="text" class="form-control" id="nitCliente" name="nit_cliente" placeholder="3138470-6" required>
+          </div>
+          <div class="form-group">
+            <label for="CampoNombre">Nombre del Cliente</label>
+            <input type="text" class="form-control" id="nombreCliente" name="nombre_cliente" placeholder="Cristian Hernandez" >
+          </div>
+          <div class="form-group">
+            <label for="CampoDireccion">Dirección del Cliente</label>
+            <input type="text" class="form-control" id="direccionCliente" name="direccion_cliente" placeholder="6ta calle a 5301 Guatemala" required>
+          </div>
+          <div class="form-group">
+            <label for="CampoTelefono">Telefono del Cliente</label>
+            <input type="text" class="form-control" id="telefonoCliente" name="telefono_cliente" placeholder="47368341" required>
+          </div>
+          <div class="form-group">
+              <!-- Boton para enviar los datos a la base de datos -->
+              <button class="btn btn-info">Registrar Cliente </button>
+          </div>
+        </form>
     
     <!-- Final del index -->
     </body>
